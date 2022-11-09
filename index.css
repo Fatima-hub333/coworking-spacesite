@@ -32,6 +32,10 @@ li{
   width: 25px;
 }
 
+.align-right {
+  margin-left: auto;
+}
+
 h1{
   font-size: 40px;
   font-weight: 400;
@@ -44,4 +48,17 @@ h1{
 
 .caption {
   margin: 0 25px;
+}
+
+.item {
+  position: relative;
+}
+
+.img-banner {
+  background-color: #cd6858;
+  color: whitesmoke;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
