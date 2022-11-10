@@ -1,6 +1,12 @@
-// Const - restrictions that make code more readable
-// 1) Must be initialized with value
-// 2) Can't be reassigned after declaration
+// Why Block scooping matters
+var price = 20;
+var isSale = true;
 
-const age = 24;
-console.log(age)
+if (isSale) {
+  //discount on the price of product
+  var price = 20 - 2;
+  // do something
+  console.log('sale price', price);
+}
+
+console.log('price', price)
