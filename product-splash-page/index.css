@@ -42,6 +42,8 @@ p{
 .main-content {
   display: flex;
   flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 /* ================
@@ -53,7 +55,8 @@ p{
   text-align: center;
   min-height: 250px;
   color: #fff;
-  background-color: #9480e4;
+  background: #9480e4 url(images/intro-bg.png);
+  background-size: cover;
 }
 
 /* ================
@@ -61,7 +64,7 @@ p{
 =================*/
 .main-content{
   align-items: center;
-  padding: 2.5em 2em 0 2em;
+  padding-top: 2.5em;
 }
 
 .img-main {
@@ -79,6 +82,18 @@ p{
 @media (min-width: 576px){
   body{
     display: flex;
+  }
+
+  h1{
+    font-size: 5vw;
+  }
+
+  h2{
+    font-size: 2.625rem;
+  }
+
+  .beta-text {
+    font-size: 1.25rem ;
   }
 
   .intro,
