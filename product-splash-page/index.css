@@ -76,3 +76,22 @@ p{
 /* ================
   Media Queries
 =================*/
+@media (min-width: 576px){
+  body{
+    display: flex;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+  }
+
+  .intro{
+    min-height: 100vh;
+  }
+
+  .main-content{
+    justify-content: center;
+    padding-top: 0;
+  }
+}
