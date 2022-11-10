@@ -33,6 +33,11 @@ p{
   margin-bottom: 0.5em;
 }
 
+.beta-text,
+.subheading{
+  text-transform: uppercase;
+}
+
 .intro,
 .main-content {
   display: flex;
