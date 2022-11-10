@@ -1,6 +1,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #404040;
+  margin: 0;
 }
 
 /* ================
@@ -19,11 +20,20 @@ h1{
   font-weight: 900;
 }
 
+.intro,
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ================
   Intro
 =================*/
 
 .intro{
+  justify-content: center;
+  text-align: center;
+  min-height: 250px;
   color: #fff;
   background-color: #9480e4;
 }
@@ -31,6 +41,15 @@ h1{
 /* ================
   Main Content
 =================*/
+.main-content{
+  align-items: center;
+  padding: 2.5em 2em 0 2em;
+}
+
+.img-main {
+  width: 120px;
+  border-radius: 50%;
+}
 
 /* ================
   Form
