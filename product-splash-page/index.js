@@ -1,1 +1,4 @@
-console.log("Hello World")
+//camelCased
+var firstName = "Jhon";
+var lastName = "Spy";
+console.log(firstName + ' '+ lastName)
