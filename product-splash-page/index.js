@@ -1,4 +1,4 @@
-//camelCased
-var firstName = "Jhon";
-var lastName = "Spy";
-console.log(firstName + ' '+ lastName)
+// window.console.log("hi");
+
+// Slopy mode - default in scripts
+// strict mode - throws more errors, prevents pitfalls of the language
