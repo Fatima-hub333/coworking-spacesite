@@ -88,3 +88,63 @@ switch (time2) {
   default:
     console.log("Good Night!");
 }
+
+// {Types & How they can be changed?}
+// 1) {Primitive Types}
+// - string
+// - number
+// - boolean
+// - undefined
+// - null
+// - symbol
+
+// 2) Everything else - Object type
+
+let messageTest = 'some string';
+
+// How JS converts one data type to another?
+
+// 1) Explicit Type Conversion: through functions avilable in every lanugage
+// 2) Implicit Type Conversion:
+
+// console.log(Boolean(messageTest));
+
+// console.log('10' + 20);
+
+if (0) {
+  // if true, do something with value
+  console.log('run');
+} else {
+  console.log('skipped');
+}
+
+// false
+// 0
+// ''
+// null
+// undefines
+// NaN
+
+// truthy (true)
+// falsy (false)
+
+// 1) Avoid direct comparisons in conditionals
+
+if (!username) {
+  console.log('no user');
+}
+
+// 2) Use triple equals === (strict equal operators)
+
+if (null == undefined) {
+  console.log('equals');
+} else {
+  console.log('not equals')
+}
+
+// 3) Convert to real Boolean Values where needed
+if (Boolean(Nan) === Boolean(Nan) {
+  console.log('equal')
+} else {
+  console.log('not equals')
+}
