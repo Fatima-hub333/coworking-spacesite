@@ -143,7 +143,7 @@ if (null == undefined) {
 }
 
 // 3) Convert to real Boolean Values where needed
-if (Boolean(Nan) === Boolean(Nan) {
+if (Boolean(Nan) === Boolean(Nan)) {
   console.log('equal')
 } else {
   console.log('not equals')
