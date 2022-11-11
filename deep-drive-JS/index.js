@@ -20,3 +20,24 @@ const mySon = "Luke";
 const parentalStatus = "Father";
 const messageSon = `${mySon}, I am your ${parentalStatus}`;
 console.log(messageSon)
+
+// How Variables Should be Named?
+const name = 'Jane';
+const Name = 'Mark';
+const NAME = 'Fred';
+
+console.log(name, Name, NAME);
+let firstName = 'Jhon';
+let lastName = 'Doe';
+let fullName = `${firstName} ${lastName}`
+console.log(fullName)
+
+let isModalVisible = true;
+if (isModalVisible) {
+  //do something
+}
+
+let isLoading;
+let haPosition;
+
+const COLOR_RED = '#f00';
