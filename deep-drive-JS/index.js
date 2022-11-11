@@ -41,3 +41,50 @@ let isLoading;
 let haPosition;
 
 const COLOR_RED = '#f00';
+
+//if statements - evaluate boolean values
+// const preferDarkMode = false;
+// const prefersSolarizedMode = true;
+
+// const colorMode = 'dark';
+
+// switch (colorMode) {
+//   case "solarized":
+//     console.log('solarized mode set!');
+//     document.body.style.background = 'palegoldenrod';
+//     break;
+//   case 'dark':
+//     console.log('dark mode set!');
+//     document.body.style.background = 'black';
+//     break;
+//   default:
+//     console.log('light mode set!');
+//     document.body.style.background = 'ghostwhite';
+// }
+
+const time = 'morning';
+
+if (time === 'morning') {
+  console.log("Good Morning!");
+} else if (time === 'afternoon') {
+  console.log("Good Afternoon!");
+} else if (time === 'evening'){
+  console.log("Good Evening!");
+} else {
+  console.log("Good Night!");
+}
+
+const time2 = 'night'
+switch (time2) {
+  case "morning":
+    console.log("Good Morning!");
+    break;
+  case "afternoon":
+    console.log("Good Afternoon!");
+    break;
+  case "evening":
+    console.log("Good Evening!");
+    break;
+  default:
+    console.log("Good Night!");
+}
