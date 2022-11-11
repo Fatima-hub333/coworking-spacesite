@@ -14,3 +14,9 @@ console.log(sentence);
 
 const threeLines = "This is a string \nthat spans \nthree lines."
 console.log(threeLines)
+
+//Template Literals Challenge
+const mySon = "Luke";
+const parentalStatus = "Father";
+const messageSon = `${mySon}, I am your ${parentalStatus}`;
+console.log(messageSon)
