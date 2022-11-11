@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #404040;
@@ -38,6 +44,15 @@ p{
   text-transform: uppercase;
 }
 
+.top-text{
+  font-size: 0.875rem;
+  font-weight: 900;
+  padding-top: 0.25em;
+  border-top: 5px solid;
+  order: -1;
+  margin: 0 auto;
+}
+
 .fine-print{
   font-size: 0.75rem;
   letter-spacing: 1px;
@@ -60,12 +75,13 @@ p{
 =================*/
 
 .intro{
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   min-height: 250px;
   color: #fff;
   background: #9480e4 url(images/intro-bg.png);
   background-size: cover;
+  padding-bottom: 1.5em;
 }
 
 /* ================
@@ -79,6 +95,11 @@ p{
 .img-main {
   width: 120px;
   border-radius: 50%;
+}
+
+.main-content p,
+form {
+  max-width: 450px;
 }
 
 /* ================
@@ -123,7 +144,6 @@ input:focus{
 .btn-primary:focus {
   background-color: #b7b7b7;
 }
-
 
 /* ================
   Media Queries
