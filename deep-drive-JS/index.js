@@ -148,3 +148,42 @@ if (Boolean(Nan) === Boolean(Nan)) {
 } else {
   console.log('not equals')
 }
+
+console.log("Challenge 1:")
+console.log(!undefined); //true
+console.log(Boolean(NaN)); // false
+console.log(false === false); // true
+console.log(5 === "5"); // false
+console.log("Hello" == "hello"); //fasle
+
+// {How to shorten conditionals with Ternaries?}
+const isAuthenticated = true;
+// let cartItemCount = 0;
+
+// if (isAuthenticated) {
+  // add item to cart
+  // cartItemCount = 1;
+// } else {
+  // tell user to login
+  // console.log("Please log in!");
+// }
+
+// const cartItemCount = isAuthenticated ? 1 : console.log("lease Login");
+// console.log(cartItemCount)
+
+const age = 12;
+// let greeting;
+
+// if (age < 10) {
+//   greeting = "Hey there!";
+// } else if (age > 18) {
+// greeting = "Greetings";
+// } else if (age > 10) {
+//  greeting = "What's up?";
+//} else {
+//   greeting = "That's an interesting age!";
+// }
+// console.log(greeting)
+
+const greeting = age < 10 ? "Hey There!" : age > 18 ? "Greetings" : age > 10 ? "What's Up?" : "That's an interesting age";
+console.log(greeting)
