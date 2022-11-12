@@ -187,3 +187,17 @@ const age = 12;
 
 const greeting = age < 10 ? "Hey There!" : age > 18 ? "Greetings" : age > 10 ? "What's Up?" : "That's an interesting age";
 console.log(greeting)
+
+const isAuthenticated = true;
+let shoppingCart;
+
+shoppingCart = isAuthenticated ? "iPad" : "";
+
+console.log("shoppingCart: ", shoppingCart);
+
+const age = 20;
+let allowedAccess;
+
+allowedAccess = age > 17 ? true : false;
+
+console.log("allowedAccess: ", allowedAccess);
