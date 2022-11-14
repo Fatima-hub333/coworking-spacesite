@@ -23,3 +23,38 @@ function splitBill(amount, numPeople) {
 console.log(splitBill(10, 2));
 console.log(splitBill(16, 4));
 console.log(splitBill(350, 9));
+
+// [What is a closure & Why it matters]
+function handleLikePost(step) {
+  let likeCount = 0;
+  return function addLike() {
+    likeCount += step;    
+    return likeCount;
+  }
+}
+
+const doubleLike = handleLikePost(5);
+
+console.log(doubleLike());
+console.log(doubleLike());
+console.log(doubleLike());
+
+// {Closures Challenge}
+// Challenge: Write a countdown function with a hard-coded starting number inside closure
+// Stretch goal: Write a countdown function that can count from a provided number,
+// with a provided step
+
+// Start
+function countdown(startingNumber, step) {
+  let countFromNum = startingNumber + step;
+  return function decrease() {
+    countFromNum -= step;
+    return countFromNum;
+  }
+}
+
+const countingDown = countdown(20, 5);
+
+console.log(countingDown());
+console.log(countingDown());
+console.log(countingDown());
