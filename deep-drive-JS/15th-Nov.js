@@ -63,3 +63,22 @@ getSocialMediaPosts(posts => {
 
 // getData('https://jsonplaceholder.typicode.com', '/posts');
 // getData('https://jsonplaceholder.typicode.com', '/comments');
+
+// [How Functions Should be Named]
+
+// functions - actions
+
+//create a todo
+function createTodos() {}
+// update a todo
+function updateTodo() {}
+// check off todo
+function checkCompleteTodo() {}
+// delete todo
+function deleteTodo() { }
+
+// getting a todo
+function getTodo() { }
+
+// getting user
+function fetchUser() {}
