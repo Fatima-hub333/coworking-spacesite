@@ -34,3 +34,32 @@ const countingDown = countdown(20, 2);
 console.log(countingDown());
 console.log(countingDown());
 console.log(countingDown());
+
+// [Partial Application for single-Responsibility Functions]
+const handleLikePost = (step) => {
+  let likeCount = 0;
+  return () => likeCount += step;
+}
+
+const doubleLike = handleLikePost(2);
+
+console.log(doubleLike());
+console.log(doubleLike());
+console.log(doubleLike());
+
+const getData = baseUrl => route => callback =>
+      fetch(`${baseUrl}${route}`)
+        .then(response => response.json())
+        .then(data => callback(data));
+  
+
+const getSocialMediaData = getData('https://jsonplaceholder.typicode.com');
+const getSocialMediaComments = getSocialMediaData('/comments');
+const getSocialMediaPosts = getSocialMediaData('/posts');
+
+getSocialMediaPosts(posts => {
+  posts.forEach(post => console.log(post.title));
+});
+
+// getData('https://jsonplaceholder.typicode.com', '/posts');
+// getData('https://jsonplaceholder.typicode.com', '/comments');
