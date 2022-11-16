@@ -21,11 +21,9 @@ const test = {
 test.sayHi()
 
 // {Object Challenge}
-// 1. Create three variables - bar, cafe, restaurant - and set their values to a bar, a cafe and a restaurant in your city
 const bar = 'Abc';
 const cafe = 'Hot & Spicy';
 const restaurant = 'Habibi';
-// 2. Create an object - favouritePlaces - and populate it with your variables from task 1
 const favouritePlaces = {
   bar, cafe, restaurant,
   greeting() {
@@ -35,6 +33,15 @@ const favouritePlaces = {
 
 console.log(favouritePlaces);
 favouritePlaces.greeting();
-// 3. If you're not already using the object property shorthand, refactor your code to do so
-// 4. Create a method on the object - greeting() -  that logs out a message to the console
-// 5. Invoke the greeting() method and also log out your favourite restaurant to the console
+
+// undefined, null, boolean, number, string, symbol
+const num = 42;
+const anotherNum = 42;
+console.log(num === anotherNum);
+
+const obj2 = {}
+const anotherObj = obj;
+anotherObj.a = 1;
+
+console.log('obj', obj);
+console.log('another Obj', anotherObj);
