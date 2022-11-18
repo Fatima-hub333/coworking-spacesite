@@ -11,3 +11,15 @@ const contact = {
   phoneNumber: '03477871262'
 }; -->
 
+
+<!-- const map1 = new Map([
+  [1, 1],
+  [true, true]
+]);
+
+map1.set('key', 'value');
+
+map1.forEach((value, key) => {
+  console.log(key, value);
+});
+[...map1.keys()] -->

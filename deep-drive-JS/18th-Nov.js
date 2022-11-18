@@ -21,18 +21,6 @@ const nums = {
   true: true
 };
 
-// const map1 = new Map([
-//   [1, 1],
-//   [true, true]
-// ]);
-
-// map1.set('key', 'value');
-
-// map1.forEach((value, key) => {
-//   console.log(key, value);
-// });
-// [...map1.keys()]
-
 const user1 = { name: 'John' }
 const user2 = { name: 'Fatima' }
 
@@ -60,3 +48,18 @@ const favouritePlaceMap = new Map([
 ]);
 
 console.log(favouritePlace.get('averageBill'));
+
+const userData = {
+  username: 'Fatima',
+  title: 'JavaScript Programmer',
+  getBio: () => {
+    console.log(`User ${this.username} is a ${this.title}`);
+  },
+  askToFriend() {
+    setTimeout(() => {
+      console.log(`Would you like to friend ${this.username}?`)
+    }, 2000);
+  }
+}
+
+userData.getBio();
