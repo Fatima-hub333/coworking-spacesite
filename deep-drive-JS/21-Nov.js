@@ -15,9 +15,6 @@ todos.pop()
 console.log(todos);
 
 // [First Array challenge]
-// 1. Create an array - favouriteSongs[] -  and add your 3 favourite songs using push()
-// 2. Log out the last song in the array, and make it so that your solution will log out the last one regardless of how many items there are in the array
-// 3. Invoke the pop method on your created array. What values do you have left in the array? 
 const favouriteSongs = [];
 const song1 = 'abcdef'
 const song2 = 'ghijk'
@@ -27,3 +24,30 @@ favouriteSongs.push(song1, song2, song3);
 console.log(favouriteSongs[favouriteSongs.length - 1])
 favouriteSongs.pop()
 console.log(favouriteSongs[favouriteSongs.length - 1]);
+
+// [Check element existence in array]
+
+const temperatures = [
+  { degrees: 69, isRecordTemp: false },
+  { degress: 82, isRecordTemp: true },
+  { degrees: 7, isRecordTemp: false },
+  { degrees: 64, isRecordTemp: false }
+];
+
+const result= temperatures.every(temperature => temperature.isRecordTemp === true);
+console.log(result)
+
+// [Some & every methods]
+const songs = [
+  {song: "Shape of You", timesStreamed: 2.384, wonGrammy: true},
+  {song: "One Dance", timesStreamed: 1.791, wonGrammy: false},
+  {song: "Rockstar", timesStreamed: 1.781	, wonGrammy: false},
+  {song: "Closer", timesStreamed: 1.688, wonGrammy: false},
+  {song: "Thinking Out Loud", timesStreamed: 1.461, wonGrammy: true}
+]
+
+const hasWonGrammy = songs.some(song => song.wonGrammy === true);
+console.log(hasWonGrammy);
+
+const allMegaHits = songs.every(song => song.timesStreamed > 1.5);
+console.log(allMegaHits);
