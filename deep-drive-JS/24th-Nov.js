@@ -55,3 +55,53 @@ const monthlyTotal = Object.values(monthlyExpenses).reduce(
 );
 
 console.log(monthlyTotal);
+
+
+const customerDishes = [
+  "Chicken Wings",
+  "Fish Sandwich",
+  "Beef Stroganoff",
+  "Grilled Cheese",
+  "Blue Cheese Salad",
+  "Chicken Wings",
+  "Reuben Sandwich",
+  "Grilled Cheese",
+  "Fish Sandwich",
+  "Chicken Pot Pie",
+  "Fish Sandwich",
+  "Beef Stroganoff"
+];
+
+const uniqueDishes = [...new Set(customerDishes)];
+console.log(uniqueDishes);
+// const numbers = new Set([[1], [2], [3]]);
+// for (const num of numbers) {
+//   console.log(num);
+// }
+
+const numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
+
+numbers.forEach(number => {
+  console.log(number);
+});
+
+
+/* 
+- map()
+- filter()
+- reduce()
+- some() / every()
+- find() / findIndex()
+- forEach()
+
+Plus:
+
+- slice()
+- concat()
+- includes()
+- array spread operator
+*/
