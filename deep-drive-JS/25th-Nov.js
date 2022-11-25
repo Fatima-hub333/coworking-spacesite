@@ -57,3 +57,16 @@ book2.addTheme("Corruption");
 
 console.log(book1.title);
 console.log(book2.title);
+
+// [prototypical inheritance - each instantiated object (from constructor function) inherits from prototype]
+// every object has prototype
+// console.log(Object.getPrototypeOf({}).constructor);
+// console.log(new Object());
+function Student(id, name, subjects = []) {
+  this.id = id;
+  this.name = name;
+  this.subjects = subjects;
+}
+
+const student1 = new Student(1, 'Reed');
+console.log(Object.getPrototypeOf(student1).constructor);
