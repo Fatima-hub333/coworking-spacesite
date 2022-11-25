@@ -69,4 +69,5 @@ function Student(id, name, subjects = []) {
 }
 
 const student1 = new Student(1, 'Reed');
-console.log(Object.getPrototypeOf(student1).constructor);
+// console.log(Object.getPrototypeOf(student1).constructor);
+console.log(student1.getStudentName())
