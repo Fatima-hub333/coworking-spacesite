@@ -68,6 +68,6 @@ function Student(id, name, subjects = []) {
   this.subjects = subjects;
 }
 
-const student1 = new Student(1, 'Reed');
+// const student1 = new Student(1, 'Reed');
 // console.log(Object.getPrototypeOf(student1).constructor);
-console.log(student1.getStudentName())
+// console.log(student1.getStudentName())
