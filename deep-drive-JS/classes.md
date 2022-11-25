@@ -1,0 +1,6 @@
+- What are constructor functions
+- Learn the prototype chain
+- USe classes for better inheritance
+- How to share features between classes
+- Get and set methods to simplify classes
+- Fix this problems with .bind()
