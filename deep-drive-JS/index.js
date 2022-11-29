@@ -51,8 +51,16 @@
 //   })
 // })
 
-document.body.addEventListener('click', event => {
-  if (!event.target.closest('.post')) return;
+// document.body.addEventListener('click', event => {
+//   if (!event.target.closest('.post')) return;
+//   console.log('Do you want to edit this post?')
+// })
 
-  console.log('Do you want to edit this post?')
+const title = document.querySelector('h1');
+title.addEventListener('click', event => {
+  console.log(event.target.textContent)
 })
+
+document.body.addEventListener('click', event => {
+  console.log(event.target.textContent);
+});
