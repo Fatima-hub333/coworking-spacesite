@@ -29,11 +29,30 @@
 // document.body.prepend(newPost);
 
 // Challenge Solution
-const title = document.querySelector('h1');
-title.innerHTML = "Creating and modifying HTML elements";
+// const title = document.querySelector('h1');
+// title.innerHTML = "Creating and modifying HTML elements";
 
-const tagline = document.createElement('h2');
-tagline.className = 'tagline';
-tagline.innerHTML = 'I can create HTML elements.'
+// const tagline = document.createElement('h2');
+// tagline.className = 'tagline';
+// tagline.innerHTML = 'I can create HTML elements.'
 
-title.append(tagline);
+// title.append(tagline);
+
+// const posts = document.querySelectorAll(".post");
+// posts.addEventListener("click", event => {
+//   console.log(event.target);
+//   console.log("Do You want to edit this post?")
+// });
+
+// const posts = document.querySelectorAll(".post");
+// posts.forEach(post => {
+//   post.addEventListener('click', event => {
+//     console.log('Do you want to edit this post?')
+//   })
+// })
+
+document.body.addEventListener('click', event => {
+  if (!event.target.closest('.post')) return;
+
+  console.log('Do you want to edit this post?')
+})
