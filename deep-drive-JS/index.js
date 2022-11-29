@@ -17,5 +17,23 @@
   
 // })
 
-const divs = document.getElementsByTagName('div');
-console.log(divs);
+// const divs = document.getElementsByTagName('div');
+// console.log(divs);
+
+// const newPost = document.createElement('div');
+// newPost.className = 'top-post';
+// newPost.innerHTML = "<strong>This is a new post</strong>"
+
+// const post = document.querySelector('.post');
+// post.prepend(newPost);
+// document.body.prepend(newPost);
+
+// Challenge Solution
+const title = document.querySelector('h1');
+title.innerHTML = "Creating and modifying HTML elements";
+
+const tagline = document.createElement('h2');
+tagline.className = 'tagline';
+tagline.innerHTML = 'I can create HTML elements.'
+
+title.append(tagline);
