@@ -9,27 +9,35 @@
   <title>Google Keep Clone</title>
 </head>
 <body>
-<main>
-  <header>
-  <img class="header-logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" alt="">
-  <h2 class="header-title">Keep</h2>
-</header>
-<div id="form-container">
-  <form id="form" autocomplete="off">
-    <input type="text" id="note-title" placeholder="Title">
-    <input type="text" id="note-text" placeholder="Take a note...">
-    <div id="form-buttons">
-      <button type="submit" id="submit-button">Submit</button>
-      <button type="button" id="form-close-button">Close</button>
+
+  <div class="modal">
+    <div class="modal-content">
+      <input class="modal-title" type="text" placeholder="Title"/>
+      <input class="modal-text" type="text" placeholder="Take a note..."/>
+      <span class="modal-close-button">Close</span>
     </div>
-  </form>
-</div>
-<div id="notes"></div>
-<div id="placeholder">
-  <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline" alt="">
-  <p id="placeholder-text">Notes you add appear here</p>
-</div>
-</main>
+  </div>
+  <main>
+    <header>
+    <img class="header-logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" alt="">
+    <h2 class="header-title">Keep</h2>
+  </header>
+  <div id="form-container">
+    <form id="form" autocomplete="off">
+      <input type="text" id="note-title" placeholder="Title">
+      <input type="text" id="note-text" placeholder="Take a note...">
+      <div id="form-buttons">
+        <button type="submit" id="submit-button">Submit</button>
+        <button type="button" id="form-close-button">Close</button>
+      </div>
+    </form>
+  </div>
+  <div id="notes"></div>
+  <div id="placeholder">
+    <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline" alt="">
+    <p id="placeholder-text">Notes you add appear here</p>
+  </div>
+  </main>
 
 <script src="5-dec.js"></script>
 </body>
