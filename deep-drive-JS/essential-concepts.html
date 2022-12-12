@@ -1,0 +1,152 @@
+<!-- this: reference to an object
+
+4 Rules to 'this'. How is it called?
+1) in the global context (global context, undefined in strict mode)
+2) as a method on an object (object on left side of dot)
+3) as a constructor function or class constructor (the instance itself)
+4) as a DOM event handler (the element itself)
+
+
+console.log(this) -> {this} is set for global context here
+fnction whatIsThis(){
+this.something = 2;
+console.log(something);
+}
+whatIsThis(); -->
+
+<!-- 
+  const user = {
+    first: 'Fatima',
+    last: 'Zahir',
+    greetUser() {
+      console.log(`Hi, ${this.first} ${this.last}`);
+    }
+  }
+  usert.greetUser()
+ -->
+
+ <!-- 
+  const user = {
+    first: 'Fatima',
+    last: 'Zahir',
+    greetUser() {
+      console.log(`Hi, ${this.first} ${this.last}`);
+    }
+  }
+
+  const userIndo = {
+    title: "Programmer",
+    user: {
+      first: 'Fatima',
+      last: 'Zahir',
+      greetUser() {
+        console.log(`Hi, ${this.first} ${this.last}`);
+    }
+    }
+  }
+
+  userInfo.user.greetUser();
+-->
+
+<!-- 
+  class user {
+    constructor(first, age){
+      this.first = first;
+      this.age = age;
+    }
+    getAge() {
+      console.log(`${this.first}'s age is ${this.age}`);
+    }
+  }
+
+  const user = new User('Bob', 34);
+  user.getAge();
+-->
+
+<!-- 
+  function User(first, age) {
+    this.first = first;
+    this.age = age;
+  }
+
+  User.prototype.getAge = function() {
+    console.log(`${this.first}'s age is ${this.age}`);
+  }
+
+  const user2 = new User('Jane', 25);
+  user2.getAge();
+-->
+
+<!-- 
+  const button = document.createElement('button');
+  button.textContent = "click";
+  document.body.appendChild(button);
+
+  button.addEventListener('click', function() {
+    console.log(this);
+  })
+
+<!-- call(), apply(), bind() -->
+
+<!-- const user = {
+  name: 'Fatima',
+  titlr: 'Programmer'
+}
+
+function printUser() {
+  console.log(`${this.first} is a ${this.title}`);
+}
+
+printUser.call(user) -->
+
+
+<!-- 
+  const user = {
+  name: "Reed",
+  title: "Programmer"  
+}
+
+function printBio(city, country) {
+  console.log(`${this.name} is a ${this.title} in ${city}, ${country}`);
+}
+
+printBio.apply(user, ['London', 'England'])
+-->
+
+<!-- 
+  const user = {
+  name: "Reed",
+  title: "Programmer"  
+}
+
+function printUser() {
+  console.log(`${this.name} is a ${this.title}`);
+}
+
+const userDescription = printUser.bind(user);
+
+const user2 = {
+  name: "Dough",
+  title: "Enterpreneur"
+}
+
+printUser.bind(user2)
+
+userDescription()
+-->
+
+<!-- 
+  const user = {
+    first: 'Bob',
+    fn() {
+      console.log(this.first);
+    }
+  }
+-->
+
+
+
+
+
+
+
