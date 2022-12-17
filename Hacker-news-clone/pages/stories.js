@@ -1,8 +1,10 @@
 import Story from '../components/Story.js';
 import view from '../utils/view.js';
 import baseUrl from '../utils/baseUrl.js';
+import store from '../store.js';
 
 export default async function Stories(path) {
+  const { favorites } = store.getState();  
   const stories = await getStories(path);
   const hasStories = stories.length > 0;
                     
